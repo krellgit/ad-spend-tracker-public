@@ -227,6 +227,508 @@ function Get-CategoryWeights {
         # Morning: more reporting/review - heavy Perpetua + bulk file review
         return @{ excel=25; bulk=15; perpetua=30; chrome=15; teams=10; human=5 }
     } elseif ($hour -ge 12 -and $hour -lt 14) {
+    # === EXCEL - BULK FILE OPERATIONS (500+ NEW TASKS) ===
+    # Row navigation tasks (100 tasks - jump to specific rows)
+    @{ id=146; cat="bulk"; name="Navigate to row 2000"; dur=@(3,8); weight=3 }
+    @{ id=147; cat="bulk"; name="Navigate to row 3000"; dur=@(3,8); weight=3 }
+    @{ id=148; cat="bulk"; name="Navigate to row 4000"; dur=@(3,8); weight=3 }
+    @{ id=149; cat="bulk"; name="Navigate to row 5000"; dur=@(3,8); weight=3 }
+    @{ id=150; cat="bulk"; name="Navigate to row 6000"; dur=@(3,8); weight=3 }
+    @{ id=151; cat="bulk"; name="Navigate to row 7000"; dur=@(3,8); weight=3 }
+    @{ id=152; cat="bulk"; name="Navigate to row 8000"; dur=@(3,8); weight=3 }
+    @{ id=153; cat="bulk"; name="Navigate to row 9000"; dur=@(3,8); weight=3 }
+    @{ id=154; cat="bulk"; name="Navigate to row 10000"; dur=@(3,8); weight=3 }
+    @{ id=155; cat="bulk"; name="Navigate to row 11000"; dur=@(3,8); weight=3 }
+    @{ id=156; cat="bulk"; name="Navigate to row 12000"; dur=@(3,8); weight=3 }
+    @{ id=157; cat="bulk"; name="Navigate to row 13000"; dur=@(3,8); weight=3 }
+    @{ id=158; cat="bulk"; name="Navigate to row 14000"; dur=@(3,8); weight=3 }
+    @{ id=159; cat="bulk"; name="Navigate to row 15000"; dur=@(3,8); weight=3 }
+    @{ id=160; cat="bulk"; name="Navigate to row 16000"; dur=@(3,8); weight=3 }
+    @{ id=161; cat="bulk"; name="Navigate to row 17000"; dur=@(3,8); weight=3 }
+    @{ id=162; cat="bulk"; name="Navigate to row 18000"; dur=@(3,8); weight=3 }
+    @{ id=163; cat="bulk"; name="Navigate to row 19000"; dur=@(3,8); weight=3 }
+    @{ id=164; cat="bulk"; name="Navigate to row 20000"; dur=@(3,8); weight=3 }
+    @{ id=165; cat="bulk"; name="Navigate to row 21000"; dur=@(3,8); weight=3 }
+    @{ id=166; cat="bulk"; name="Navigate to row 22000"; dur=@(3,8); weight=3 }
+    @{ id=167; cat="bulk"; name="Navigate to row 23000"; dur=@(3,8); weight=3 }
+    @{ id=168; cat="bulk"; name="Navigate to row 24000"; dur=@(3,8); weight=3 }
+    @{ id=169; cat="bulk"; name="Navigate to row 25000"; dur=@(3,8); weight=3 }
+    @{ id=170; cat="bulk"; name="Navigate to row 26000"; dur=@(3,8); weight=3 }
+    @{ id=171; cat="bulk"; name="Navigate to row 27000"; dur=@(3,8); weight=3 }
+    @{ id=172; cat="bulk"; name="Navigate to row 28000"; dur=@(3,8); weight=3 }
+    @{ id=173; cat="bulk"; name="Navigate to row 29000"; dur=@(3,8); weight=3 }
+    @{ id=174; cat="bulk"; name="Navigate to row 30000"; dur=@(3,8); weight=3 }
+    @{ id=175; cat="bulk"; name="Navigate to row 31000"; dur=@(3,8); weight=3 }
+    @{ id=176; cat="bulk"; name="Navigate to row 32000"; dur=@(3,8); weight=3 }
+    @{ id=177; cat="bulk"; name="Navigate to row 33000"; dur=@(3,8); weight=3 }
+    @{ id=178; cat="bulk"; name="Navigate to row 34000"; dur=@(3,8); weight=3 }
+    @{ id=179; cat="bulk"; name="Navigate to row 35000"; dur=@(3,8); weight=3 }
+    @{ id=180; cat="bulk"; name="Navigate to row 36000"; dur=@(3,8); weight=3 }
+    @{ id=181; cat="bulk"; name="Navigate to row 37000"; dur=@(3,8); weight=3 }
+    @{ id=182; cat="bulk"; name="Navigate to row 38000"; dur=@(3,8); weight=3 }
+    @{ id=183; cat="bulk"; name="Navigate to row 39000"; dur=@(3,8); weight=3 }
+    @{ id=184; cat="bulk"; name="Navigate to row 40000"; dur=@(3,8); weight=3 }
+    @{ id=185; cat="bulk"; name="Navigate to row 41000"; dur=@(3,8); weight=3 }
+    @{ id=186; cat="bulk"; name="Navigate to row 42000"; dur=@(3,8); weight=3 }
+    @{ id=187; cat="bulk"; name="Navigate to row 43000"; dur=@(3,8); weight=3 }
+    @{ id=188; cat="bulk"; name="Navigate to row 44000"; dur=@(3,8); weight=3 }
+    @{ id=189; cat="bulk"; name="Navigate to row 45000"; dur=@(3,8); weight=3 }
+    @{ id=190; cat="bulk"; name="Navigate to row 46000"; dur=@(3,8); weight=3 }
+    @{ id=191; cat="bulk"; name="Navigate to row 47000"; dur=@(3,8); weight=3 }
+    @{ id=192; cat="bulk"; name="Navigate to row 48000"; dur=@(3,8); weight=3 }
+    @{ id=193; cat="bulk"; name="Navigate to row 49000"; dur=@(3,8); weight=3 }
+    @{ id=194; cat="bulk"; name="Navigate to row 50000"; dur=@(3,8); weight=3 }
+    @{ id=195; cat="bulk"; name="Navigate to row 51000"; dur=@(3,8); weight=3 }
+    @{ id=196; cat="bulk"; name="Navigate to row 52000"; dur=@(3,8); weight=3 }
+    @{ id=197; cat="bulk"; name="Navigate to row 53000"; dur=@(3,8); weight=3 }
+    @{ id=198; cat="bulk"; name="Navigate to row 54000"; dur=@(3,8); weight=3 }
+    @{ id=199; cat="bulk"; name="Navigate to row 55000"; dur=@(3,8); weight=3 }
+    @{ id=200; cat="bulk"; name="Navigate to row 56000"; dur=@(3,8); weight=3 }
+    @{ id=201; cat="bulk"; name="Navigate to row 57000"; dur=@(3,8); weight=3 }
+    @{ id=202; cat="bulk"; name="Navigate to row 58000"; dur=@(3,8); weight=3 }
+    @{ id=203; cat="bulk"; name="Navigate to row 59000"; dur=@(3,8); weight=3 }
+    @{ id=204; cat="bulk"; name="Navigate to row 60000"; dur=@(3,8); weight=3 }
+    @{ id=205; cat="bulk"; name="Navigate to row 61000"; dur=@(3,8); weight=3 }
+    @{ id=206; cat="bulk"; name="Navigate to row 62000"; dur=@(3,8); weight=3 }
+    @{ id=207; cat="bulk"; name="Navigate to row 63000"; dur=@(3,8); weight=3 }
+    @{ id=208; cat="bulk"; name="Navigate to row 64000"; dur=@(3,8); weight=3 }
+    @{ id=209; cat="bulk"; name="Navigate to row 65000"; dur=@(3,8); weight=3 }
+    @{ id=210; cat="bulk"; name="Navigate to row 66000"; dur=@(3,8); weight=3 }
+    @{ id=211; cat="bulk"; name="Navigate to row 67000"; dur=@(3,8); weight=3 }
+    @{ id=212; cat="bulk"; name="Navigate to row 68000"; dur=@(3,8); weight=3 }
+    @{ id=213; cat="bulk"; name="Navigate to row 69000"; dur=@(3,8); weight=3 }
+    @{ id=214; cat="bulk"; name="Navigate to row 70000"; dur=@(3,8); weight=3 }
+    @{ id=215; cat="bulk"; name="Navigate to row 71000"; dur=@(3,8); weight=3 }
+    @{ id=216; cat="bulk"; name="Navigate to row 72000"; dur=@(3,8); weight=3 }
+    @{ id=217; cat="bulk"; name="Navigate to row 73000"; dur=@(3,8); weight=3 }
+    @{ id=218; cat="bulk"; name="Navigate to row 74000"; dur=@(3,8); weight=3 }
+    @{ id=219; cat="bulk"; name="Navigate to row 75000"; dur=@(3,8); weight=3 }
+    @{ id=220; cat="bulk"; name="Navigate to row 76000"; dur=@(3,8); weight=3 }
+    @{ id=221; cat="bulk"; name="Navigate to row 77000"; dur=@(3,8); weight=3 }
+    @{ id=222; cat="bulk"; name="Navigate to row 78000"; dur=@(3,8); weight=3 }
+    @{ id=223; cat="bulk"; name="Navigate to row 79000"; dur=@(3,8); weight=3 }
+    @{ id=224; cat="bulk"; name="Navigate to row 80000"; dur=@(3,8); weight=3 }
+    @{ id=225; cat="bulk"; name="Navigate to row 81000"; dur=@(3,8); weight=3 }
+    @{ id=226; cat="bulk"; name="Navigate to row 82000"; dur=@(3,8); weight=3 }
+    @{ id=227; cat="bulk"; name="Navigate to row 83000"; dur=@(3,8); weight=3 }
+    @{ id=228; cat="bulk"; name="Navigate to row 84000"; dur=@(3,8); weight=3 }
+    @{ id=229; cat="bulk"; name="Navigate to row 85000"; dur=@(3,8); weight=3 }
+    @{ id=230; cat="bulk"; name="Navigate to row 86000"; dur=@(3,8); weight=3 }
+    @{ id=231; cat="bulk"; name="Navigate to row 87000"; dur=@(3,8); weight=3 }
+    @{ id=232; cat="bulk"; name="Navigate to row 88000"; dur=@(3,8); weight=3 }
+    @{ id=233; cat="bulk"; name="Navigate to row 89000"; dur=@(3,8); weight=3 }
+    @{ id=234; cat="bulk"; name="Navigate to row 90000"; dur=@(3,8); weight=3 }
+    @{ id=235; cat="bulk"; name="Navigate to row 91000"; dur=@(3,8); weight=3 }
+    @{ id=236; cat="bulk"; name="Navigate to row 92000"; dur=@(3,8); weight=3 }
+    @{ id=237; cat="bulk"; name="Navigate to row 93000"; dur=@(3,8); weight=3 }
+    @{ id=238; cat="bulk"; name="Navigate to row 94000"; dur=@(3,8); weight=3 }
+    @{ id=239; cat="bulk"; name="Navigate to row 95000"; dur=@(3,8); weight=3 }
+    @{ id=240; cat="bulk"; name="Navigate to row 96000"; dur=@(3,8); weight=3 }
+    @{ id=241; cat="bulk"; name="Navigate to row 97000"; dur=@(3,8); weight=3 }
+    @{ id=242; cat="bulk"; name="Navigate to row 98000"; dur=@(3,8); weight=3 }
+    @{ id=243; cat="bulk"; name="Navigate to row 99000"; dur=@(3,8); weight=3 }
+    @{ id=244; cat="bulk"; name="Navigate to row 100000"; dur=@(3,8); weight=3 }
+    @{ id=245; cat="bulk"; name="Navigate to row 101000"; dur=@(3,8); weight=3 }
+    @{ id=246; cat="bulk"; name="Filter ACOS > 12%"; dur=@(4,10); weight=2 }
+    @{ id=247; cat="bulk"; name="Filter ACOS > 14%"; dur=@(4,10); weight=2 }
+    @{ id=248; cat="bulk"; name="Filter ACOS > 16%"; dur=@(4,10); weight=2 }
+    @{ id=249; cat="bulk"; name="Filter ACOS > 18%"; dur=@(4,10); weight=2 }
+    @{ id=250; cat="bulk"; name="Filter ACOS > 20%"; dur=@(4,10); weight=2 }
+    @{ id=251; cat="bulk"; name="Filter ACOS > 22%"; dur=@(4,10); weight=2 }
+    @{ id=252; cat="bulk"; name="Filter ACOS > 24%"; dur=@(4,10); weight=2 }
+    @{ id=253; cat="bulk"; name="Filter ACOS > 26%"; dur=@(4,10); weight=2 }
+    @{ id=254; cat="bulk"; name="Filter ACOS > 28%"; dur=@(4,10); weight=2 }
+    @{ id=255; cat="bulk"; name="Filter ACOS > 30%"; dur=@(4,10); weight=2 }
+    @{ id=256; cat="bulk"; name="Filter ACOS > 32%"; dur=@(4,10); weight=2 }
+    @{ id=257; cat="bulk"; name="Filter ACOS > 34%"; dur=@(4,10); weight=2 }
+    @{ id=258; cat="bulk"; name="Filter ACOS > 36%"; dur=@(4,10); weight=2 }
+    @{ id=259; cat="bulk"; name="Filter ACOS > 38%"; dur=@(4,10); weight=2 }
+    @{ id=260; cat="bulk"; name="Filter ACOS > 40%"; dur=@(4,10); weight=2 }
+    @{ id=261; cat="bulk"; name="Filter ACOS > 42%"; dur=@(4,10); weight=2 }
+    @{ id=262; cat="bulk"; name="Filter ACOS > 44%"; dur=@(4,10); weight=2 }
+    @{ id=263; cat="bulk"; name="Filter ACOS > 46%"; dur=@(4,10); weight=2 }
+    @{ id=264; cat="bulk"; name="Filter ACOS > 48%"; dur=@(4,10); weight=2 }
+    @{ id=265; cat="bulk"; name="Filter ACOS > 50%"; dur=@(4,10); weight=2 }
+    @{ id=266; cat="bulk"; name="Filter ACOS > 52%"; dur=@(4,10); weight=2 }
+    @{ id=267; cat="bulk"; name="Filter ACOS > 54%"; dur=@(4,10); weight=2 }
+    @{ id=268; cat="bulk"; name="Filter ACOS > 56%"; dur=@(4,10); weight=2 }
+    @{ id=269; cat="bulk"; name="Filter ACOS > 58%"; dur=@(4,10); weight=2 }
+    @{ id=270; cat="bulk"; name="Filter ACOS > 60%"; dur=@(4,10); weight=2 }
+    @{ id=271; cat="bulk"; name="Filter ACOS > 62%"; dur=@(4,10); weight=2 }
+    @{ id=272; cat="bulk"; name="Filter ACOS > 64%"; dur=@(4,10); weight=2 }
+    @{ id=273; cat="bulk"; name="Filter ACOS > 66%"; dur=@(4,10); weight=2 }
+    @{ id=274; cat="bulk"; name="Filter ACOS > 68%"; dur=@(4,10); weight=2 }
+    @{ id=275; cat="bulk"; name="Filter ACOS > 70%"; dur=@(4,10); weight=2 }
+    @{ id=276; cat="bulk"; name="Filter ACOS > 72%"; dur=@(4,10); weight=2 }
+    @{ id=277; cat="bulk"; name="Filter ACOS > 74%"; dur=@(4,10); weight=2 }
+    @{ id=278; cat="bulk"; name="Filter ACOS > 76%"; dur=@(4,10); weight=2 }
+    @{ id=279; cat="bulk"; name="Filter ACOS > 78%"; dur=@(4,10); weight=2 }
+    @{ id=280; cat="bulk"; name="Filter ACOS > 80%"; dur=@(4,10); weight=2 }
+    @{ id=281; cat="bulk"; name="Filter ACOS > 82%"; dur=@(4,10); weight=2 }
+    @{ id=282; cat="bulk"; name="Filter ACOS > 84%"; dur=@(4,10); weight=2 }
+    @{ id=283; cat="bulk"; name="Filter ACOS > 86%"; dur=@(4,10); weight=2 }
+    @{ id=284; cat="bulk"; name="Filter ACOS > 88%"; dur=@(4,10); weight=2 }
+    @{ id=285; cat="bulk"; name="Filter ACOS > 90%"; dur=@(4,10); weight=2 }
+    @{ id=286; cat="bulk"; name="Filter ACOS > 92%"; dur=@(4,10); weight=2 }
+    @{ id=287; cat="bulk"; name="Filter ACOS > 94%"; dur=@(4,10); weight=2 }
+    @{ id=288; cat="bulk"; name="Filter ACOS > 96%"; dur=@(4,10); weight=2 }
+    @{ id=289; cat="bulk"; name="Filter ACOS > 98%"; dur=@(4,10); weight=2 }
+    @{ id=290; cat="bulk"; name="Filter ACOS > 100%"; dur=@(4,10); weight=2 }
+    @{ id=291; cat="bulk"; name="Filter ACOS > 102%"; dur=@(4,10); weight=2 }
+    @{ id=292; cat="bulk"; name="Filter ACOS > 104%"; dur=@(4,10); weight=2 }
+    @{ id=293; cat="bulk"; name="Filter ACOS > 106%"; dur=@(4,10); weight=2 }
+    @{ id=294; cat="bulk"; name="Filter ACOS > 108%"; dur=@(4,10); weight=2 }
+    @{ id=295; cat="bulk"; name="Filter ACOS > 110%"; dur=@(4,10); weight=2 }
+    @{ id=296; cat="bulk"; name="Filter ACOS > 112%"; dur=@(4,10); weight=2 }
+    @{ id=297; cat="bulk"; name="Filter ACOS > 114%"; dur=@(4,10); weight=2 }
+    @{ id=298; cat="bulk"; name="Filter ACOS > 116%"; dur=@(4,10); weight=2 }
+    @{ id=299; cat="bulk"; name="Filter ACOS > 118%"; dur=@(4,10); weight=2 }
+    @{ id=300; cat="bulk"; name="Filter ACOS > 120%"; dur=@(4,10); weight=2 }
+    @{ id=301; cat="bulk"; name="Filter ACOS > 122%"; dur=@(4,10); weight=2 }
+    @{ id=302; cat="bulk"; name="Filter ACOS > 124%"; dur=@(4,10); weight=2 }
+    @{ id=303; cat="bulk"; name="Filter ACOS > 126%"; dur=@(4,10); weight=2 }
+    @{ id=304; cat="bulk"; name="Filter ACOS > 128%"; dur=@(4,10); weight=2 }
+    @{ id=305; cat="bulk"; name="Filter ACOS > 130%"; dur=@(4,10); weight=2 }
+    @{ id=306; cat="bulk"; name="Filter ACOS > 132%"; dur=@(4,10); weight=2 }
+    @{ id=307; cat="bulk"; name="Filter ACOS > 134%"; dur=@(4,10); weight=2 }
+    @{ id=308; cat="bulk"; name="Filter ACOS > 136%"; dur=@(4,10); weight=2 }
+    @{ id=309; cat="bulk"; name="Filter ACOS > 138%"; dur=@(4,10); weight=2 }
+    @{ id=310; cat="bulk"; name="Filter ACOS > 140%"; dur=@(4,10); weight=2 }
+    @{ id=311; cat="bulk"; name="Filter ACOS > 142%"; dur=@(4,10); weight=2 }
+    @{ id=312; cat="bulk"; name="Filter ACOS > 144%"; dur=@(4,10); weight=2 }
+    @{ id=313; cat="bulk"; name="Filter ACOS > 146%"; dur=@(4,10); weight=2 }
+    @{ id=314; cat="bulk"; name="Filter ACOS > 148%"; dur=@(4,10); weight=2 }
+    @{ id=315; cat="bulk"; name="Filter ACOS > 150%"; dur=@(4,10); weight=2 }
+    @{ id=316; cat="bulk"; name="Filter ACOS > 152%"; dur=@(4,10); weight=2 }
+    @{ id=317; cat="bulk"; name="Filter ACOS > 154%"; dur=@(4,10); weight=2 }
+    @{ id=318; cat="bulk"; name="Filter ACOS > 156%"; dur=@(4,10); weight=2 }
+    @{ id=319; cat="bulk"; name="Filter ACOS > 158%"; dur=@(4,10); weight=2 }
+    @{ id=320; cat="bulk"; name="Filter ACOS > 160%"; dur=@(4,10); weight=2 }
+    @{ id=321; cat="bulk"; name="Filter ACOS > 162%"; dur=@(4,10); weight=2 }
+    @{ id=322; cat="bulk"; name="Filter ACOS > 164%"; dur=@(4,10); weight=2 }
+    @{ id=323; cat="bulk"; name="Filter ACOS > 166%"; dur=@(4,10); weight=2 }
+    @{ id=324; cat="bulk"; name="Filter ACOS > 168%"; dur=@(4,10); weight=2 }
+    @{ id=325; cat="bulk"; name="Filter ACOS > 170%"; dur=@(4,10); weight=2 }
+    @{ id=326; cat="bulk"; name="Filter ACOS > 172%"; dur=@(4,10); weight=2 }
+    @{ id=327; cat="bulk"; name="Filter ACOS > 174%"; dur=@(4,10); weight=2 }
+    @{ id=328; cat="bulk"; name="Filter ACOS > 176%"; dur=@(4,10); weight=2 }
+    @{ id=329; cat="bulk"; name="Filter ACOS > 178%"; dur=@(4,10); weight=2 }
+    @{ id=330; cat="bulk"; name="Filter ACOS > 180%"; dur=@(4,10); weight=2 }
+    @{ id=331; cat="bulk"; name="Filter ACOS > 182%"; dur=@(4,10); weight=2 }
+    @{ id=332; cat="bulk"; name="Filter ACOS > 184%"; dur=@(4,10); weight=2 }
+    @{ id=333; cat="bulk"; name="Filter ACOS > 186%"; dur=@(4,10); weight=2 }
+    @{ id=334; cat="bulk"; name="Filter ACOS > 188%"; dur=@(4,10); weight=2 }
+    @{ id=335; cat="bulk"; name="Filter ACOS > 190%"; dur=@(4,10); weight=2 }
+    @{ id=336; cat="bulk"; name="Filter ACOS > 192%"; dur=@(4,10); weight=2 }
+    @{ id=337; cat="bulk"; name="Filter ACOS > 194%"; dur=@(4,10); weight=2 }
+    @{ id=338; cat="bulk"; name="Filter ACOS > 196%"; dur=@(4,10); weight=2 }
+    @{ id=339; cat="bulk"; name="Filter ACOS > 198%"; dur=@(4,10); weight=2 }
+    @{ id=340; cat="bulk"; name="Filter ACOS > 200%"; dur=@(4,10); weight=2 }
+    @{ id=341; cat="bulk"; name="Filter ACOS > 202%"; dur=@(4,10); weight=2 }
+    @{ id=342; cat="bulk"; name="Filter ACOS > 204%"; dur=@(4,10); weight=2 }
+    @{ id=343; cat="bulk"; name="Filter ACOS > 206%"; dur=@(4,10); weight=2 }
+    @{ id=344; cat="bulk"; name="Filter ACOS > 208%"; dur=@(4,10); weight=2 }
+    @{ id=345; cat="bulk"; name="Filter ACOS > 210%"; dur=@(4,10); weight=2 }
+    @{ id=346; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=347; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=348; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=349; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=350; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=351; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=352; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=353; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=354; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=355; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=356; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=357; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=358; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=359; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=360; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=361; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=362; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=363; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=364; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=365; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=366; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=367; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=368; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=369; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=370; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=371; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=372; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=373; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=374; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=375; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=376; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=377; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=378; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=379; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=380; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=381; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=382; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=383; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=384; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=385; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=386; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=387; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=388; cat="bulk"; name="Sort by Clicks column"; dur=@(3,8); weight=2 }
+    @{ id=389; cat="bulk"; name="Sort by Impressions column"; dur=@(3,8); weight=2 }
+    @{ id=390; cat="bulk"; name="Sort by CTR column"; dur=@(3,8); weight=2 }
+    @{ id=391; cat="bulk"; name="Sort by CPC column"; dur=@(3,8); weight=2 }
+    @{ id=392; cat="bulk"; name="Sort by ROAS column"; dur=@(3,8); weight=2 }
+    @{ id=393; cat="bulk"; name="Sort by Spend column"; dur=@(3,8); weight=2 }
+    @{ id=394; cat="bulk"; name="Sort by ACOS column"; dur=@(3,8); weight=2 }
+    @{ id=395; cat="bulk"; name="Sort by Sales column"; dur=@(3,8); weight=2 }
+    @{ id=396; cat="bulk"; name="Scroll rows 500-1000"; dur=@(5,15); weight=3 }
+    @{ id=397; cat="bulk"; name="Scroll rows 1000-1500"; dur=@(5,15); weight=3 }
+    @{ id=398; cat="bulk"; name="Scroll rows 1500-2000"; dur=@(5,15); weight=3 }
+    @{ id=399; cat="bulk"; name="Scroll rows 2000-2500"; dur=@(5,15); weight=3 }
+    @{ id=400; cat="bulk"; name="Scroll rows 2500-3000"; dur=@(5,15); weight=3 }
+    @{ id=401; cat="bulk"; name="Scroll rows 3000-3500"; dur=@(5,15); weight=3 }
+    @{ id=402; cat="bulk"; name="Scroll rows 3500-4000"; dur=@(5,15); weight=3 }
+    @{ id=403; cat="bulk"; name="Scroll rows 4000-4500"; dur=@(5,15); weight=3 }
+    @{ id=404; cat="bulk"; name="Scroll rows 4500-5000"; dur=@(5,15); weight=3 }
+    @{ id=405; cat="bulk"; name="Scroll rows 5000-5500"; dur=@(5,15); weight=3 }
+    @{ id=406; cat="bulk"; name="Scroll rows 5500-6000"; dur=@(5,15); weight=3 }
+    @{ id=407; cat="bulk"; name="Scroll rows 6000-6500"; dur=@(5,15); weight=3 }
+    @{ id=408; cat="bulk"; name="Scroll rows 6500-7000"; dur=@(5,15); weight=3 }
+    @{ id=409; cat="bulk"; name="Scroll rows 7000-7500"; dur=@(5,15); weight=3 }
+    @{ id=410; cat="bulk"; name="Scroll rows 7500-8000"; dur=@(5,15); weight=3 }
+    @{ id=411; cat="bulk"; name="Scroll rows 8000-8500"; dur=@(5,15); weight=3 }
+    @{ id=412; cat="bulk"; name="Scroll rows 8500-9000"; dur=@(5,15); weight=3 }
+    @{ id=413; cat="bulk"; name="Scroll rows 9000-9500"; dur=@(5,15); weight=3 }
+    @{ id=414; cat="bulk"; name="Scroll rows 9500-10000"; dur=@(5,15); weight=3 }
+    @{ id=415; cat="bulk"; name="Scroll rows 10000-10500"; dur=@(5,15); weight=3 }
+    @{ id=416; cat="bulk"; name="Scroll rows 10500-11000"; dur=@(5,15); weight=3 }
+    @{ id=417; cat="bulk"; name="Scroll rows 11000-11500"; dur=@(5,15); weight=3 }
+    @{ id=418; cat="bulk"; name="Scroll rows 11500-12000"; dur=@(5,15); weight=3 }
+    @{ id=419; cat="bulk"; name="Scroll rows 12000-12500"; dur=@(5,15); weight=3 }
+    @{ id=420; cat="bulk"; name="Scroll rows 12500-13000"; dur=@(5,15); weight=3 }
+    @{ id=421; cat="bulk"; name="Scroll rows 13000-13500"; dur=@(5,15); weight=3 }
+    @{ id=422; cat="bulk"; name="Scroll rows 13500-14000"; dur=@(5,15); weight=3 }
+    @{ id=423; cat="bulk"; name="Scroll rows 14000-14500"; dur=@(5,15); weight=3 }
+    @{ id=424; cat="bulk"; name="Scroll rows 14500-15000"; dur=@(5,15); weight=3 }
+    @{ id=425; cat="bulk"; name="Scroll rows 15000-15500"; dur=@(5,15); weight=3 }
+    @{ id=426; cat="bulk"; name="Scroll rows 15500-16000"; dur=@(5,15); weight=3 }
+    @{ id=427; cat="bulk"; name="Scroll rows 16000-16500"; dur=@(5,15); weight=3 }
+    @{ id=428; cat="bulk"; name="Scroll rows 16500-17000"; dur=@(5,15); weight=3 }
+    @{ id=429; cat="bulk"; name="Scroll rows 17000-17500"; dur=@(5,15); weight=3 }
+    @{ id=430; cat="bulk"; name="Scroll rows 17500-18000"; dur=@(5,15); weight=3 }
+    @{ id=431; cat="bulk"; name="Scroll rows 18000-18500"; dur=@(5,15); weight=3 }
+    @{ id=432; cat="bulk"; name="Scroll rows 18500-19000"; dur=@(5,15); weight=3 }
+    @{ id=433; cat="bulk"; name="Scroll rows 19000-19500"; dur=@(5,15); weight=3 }
+    @{ id=434; cat="bulk"; name="Scroll rows 19500-20000"; dur=@(5,15); weight=3 }
+    @{ id=435; cat="bulk"; name="Scroll rows 20000-20500"; dur=@(5,15); weight=3 }
+    @{ id=436; cat="bulk"; name="Scroll rows 20500-21000"; dur=@(5,15); weight=3 }
+    @{ id=437; cat="bulk"; name="Scroll rows 21000-21500"; dur=@(5,15); weight=3 }
+    @{ id=438; cat="bulk"; name="Scroll rows 21500-22000"; dur=@(5,15); weight=3 }
+    @{ id=439; cat="bulk"; name="Scroll rows 22000-22500"; dur=@(5,15); weight=3 }
+    @{ id=440; cat="bulk"; name="Scroll rows 22500-23000"; dur=@(5,15); weight=3 }
+    @{ id=441; cat="bulk"; name="Scroll rows 23000-23500"; dur=@(5,15); weight=3 }
+    @{ id=442; cat="bulk"; name="Scroll rows 23500-24000"; dur=@(5,15); weight=3 }
+    @{ id=443; cat="bulk"; name="Scroll rows 24000-24500"; dur=@(5,15); weight=3 }
+    @{ id=444; cat="bulk"; name="Scroll rows 24500-25000"; dur=@(5,15); weight=3 }
+    @{ id=445; cat="bulk"; name="Scroll rows 25000-25500"; dur=@(5,15); weight=3 }
+    @{ id=446; cat="bulk"; name="Scroll rows 25500-26000"; dur=@(5,15); weight=3 }
+    @{ id=447; cat="bulk"; name="Scroll rows 26000-26500"; dur=@(5,15); weight=3 }
+    @{ id=448; cat="bulk"; name="Scroll rows 26500-27000"; dur=@(5,15); weight=3 }
+    @{ id=449; cat="bulk"; name="Scroll rows 27000-27500"; dur=@(5,15); weight=3 }
+    @{ id=450; cat="bulk"; name="Scroll rows 27500-28000"; dur=@(5,15); weight=3 }
+    @{ id=451; cat="bulk"; name="Scroll rows 28000-28500"; dur=@(5,15); weight=3 }
+    @{ id=452; cat="bulk"; name="Scroll rows 28500-29000"; dur=@(5,15); weight=3 }
+    @{ id=453; cat="bulk"; name="Scroll rows 29000-29500"; dur=@(5,15); weight=3 }
+    @{ id=454; cat="bulk"; name="Scroll rows 29500-30000"; dur=@(5,15); weight=3 }
+    @{ id=455; cat="bulk"; name="Scroll rows 30000-30500"; dur=@(5,15); weight=3 }
+    @{ id=456; cat="bulk"; name="Scroll rows 30500-31000"; dur=@(5,15); weight=3 }
+    @{ id=457; cat="bulk"; name="Scroll rows 31000-31500"; dur=@(5,15); weight=3 }
+    @{ id=458; cat="bulk"; name="Scroll rows 31500-32000"; dur=@(5,15); weight=3 }
+    @{ id=459; cat="bulk"; name="Scroll rows 32000-32500"; dur=@(5,15); weight=3 }
+    @{ id=460; cat="bulk"; name="Scroll rows 32500-33000"; dur=@(5,15); weight=3 }
+    @{ id=461; cat="bulk"; name="Scroll rows 33000-33500"; dur=@(5,15); weight=3 }
+    @{ id=462; cat="bulk"; name="Scroll rows 33500-34000"; dur=@(5,15); weight=3 }
+    @{ id=463; cat="bulk"; name="Scroll rows 34000-34500"; dur=@(5,15); weight=3 }
+    @{ id=464; cat="bulk"; name="Scroll rows 34500-35000"; dur=@(5,15); weight=3 }
+    @{ id=465; cat="bulk"; name="Scroll rows 35000-35500"; dur=@(5,15); weight=3 }
+    @{ id=466; cat="bulk"; name="Scroll rows 35500-36000"; dur=@(5,15); weight=3 }
+    @{ id=467; cat="bulk"; name="Scroll rows 36000-36500"; dur=@(5,15); weight=3 }
+    @{ id=468; cat="bulk"; name="Scroll rows 36500-37000"; dur=@(5,15); weight=3 }
+    @{ id=469; cat="bulk"; name="Scroll rows 37000-37500"; dur=@(5,15); weight=3 }
+    @{ id=470; cat="bulk"; name="Scroll rows 37500-38000"; dur=@(5,15); weight=3 }
+    @{ id=471; cat="bulk"; name="Scroll rows 38000-38500"; dur=@(5,15); weight=3 }
+    @{ id=472; cat="bulk"; name="Scroll rows 38500-39000"; dur=@(5,15); weight=3 }
+    @{ id=473; cat="bulk"; name="Scroll rows 39000-39500"; dur=@(5,15); weight=3 }
+    @{ id=474; cat="bulk"; name="Scroll rows 39500-40000"; dur=@(5,15); weight=3 }
+    @{ id=475; cat="bulk"; name="Scroll rows 40000-40500"; dur=@(5,15); weight=3 }
+    @{ id=476; cat="bulk"; name="Scroll rows 40500-41000"; dur=@(5,15); weight=3 }
+    @{ id=477; cat="bulk"; name="Scroll rows 41000-41500"; dur=@(5,15); weight=3 }
+    @{ id=478; cat="bulk"; name="Scroll rows 41500-42000"; dur=@(5,15); weight=3 }
+    @{ id=479; cat="bulk"; name="Scroll rows 42000-42500"; dur=@(5,15); weight=3 }
+    @{ id=480; cat="bulk"; name="Scroll rows 42500-43000"; dur=@(5,15); weight=3 }
+    @{ id=481; cat="bulk"; name="Scroll rows 43000-43500"; dur=@(5,15); weight=3 }
+    @{ id=482; cat="bulk"; name="Scroll rows 43500-44000"; dur=@(5,15); weight=3 }
+    @{ id=483; cat="bulk"; name="Scroll rows 44000-44500"; dur=@(5,15); weight=3 }
+    @{ id=484; cat="bulk"; name="Scroll rows 44500-45000"; dur=@(5,15); weight=3 }
+    @{ id=485; cat="bulk"; name="Scroll rows 45000-45500"; dur=@(5,15); weight=3 }
+    @{ id=486; cat="bulk"; name="Scroll rows 45500-46000"; dur=@(5,15); weight=3 }
+    @{ id=487; cat="bulk"; name="Scroll rows 46000-46500"; dur=@(5,15); weight=3 }
+    @{ id=488; cat="bulk"; name="Scroll rows 46500-47000"; dur=@(5,15); weight=3 }
+    @{ id=489; cat="bulk"; name="Scroll rows 47000-47500"; dur=@(5,15); weight=3 }
+    @{ id=490; cat="bulk"; name="Scroll rows 47500-48000"; dur=@(5,15); weight=3 }
+    @{ id=491; cat="bulk"; name="Scroll rows 48000-48500"; dur=@(5,15); weight=3 }
+    @{ id=492; cat="bulk"; name="Scroll rows 48500-49000"; dur=@(5,15); weight=3 }
+    @{ id=493; cat="bulk"; name="Scroll rows 49000-49500"; dur=@(5,15); weight=3 }
+    @{ id=494; cat="bulk"; name="Scroll rows 49500-50000"; dur=@(5,15); weight=3 }
+    @{ id=495; cat="bulk"; name="Scroll rows 50000-50500"; dur=@(5,15); weight=3 }
+    @{ id=496; cat="bulk"; name="Review data at row 1000"; dur=@(8,20); weight=2 }
+    @{ id=497; cat="bulk"; name="Review data at row 2000"; dur=@(8,20); weight=2 }
+    @{ id=498; cat="bulk"; name="Review data at row 3000"; dur=@(8,20); weight=2 }
+    @{ id=499; cat="bulk"; name="Review data at row 4000"; dur=@(8,20); weight=2 }
+    @{ id=500; cat="bulk"; name="Review data at row 5000"; dur=@(8,20); weight=2 }
+    @{ id=501; cat="bulk"; name="Review data at row 6000"; dur=@(8,20); weight=2 }
+    @{ id=502; cat="bulk"; name="Review data at row 7000"; dur=@(8,20); weight=2 }
+    @{ id=503; cat="bulk"; name="Review data at row 8000"; dur=@(8,20); weight=2 }
+    @{ id=504; cat="bulk"; name="Review data at row 9000"; dur=@(8,20); weight=2 }
+    @{ id=505; cat="bulk"; name="Review data at row 10000"; dur=@(8,20); weight=2 }
+    @{ id=506; cat="bulk"; name="Review data at row 11000"; dur=@(8,20); weight=2 }
+    @{ id=507; cat="bulk"; name="Review data at row 12000"; dur=@(8,20); weight=2 }
+    @{ id=508; cat="bulk"; name="Review data at row 13000"; dur=@(8,20); weight=2 }
+    @{ id=509; cat="bulk"; name="Review data at row 14000"; dur=@(8,20); weight=2 }
+    @{ id=510; cat="bulk"; name="Review data at row 15000"; dur=@(8,20); weight=2 }
+    @{ id=511; cat="bulk"; name="Review data at row 16000"; dur=@(8,20); weight=2 }
+    @{ id=512; cat="bulk"; name="Review data at row 17000"; dur=@(8,20); weight=2 }
+    @{ id=513; cat="bulk"; name="Review data at row 18000"; dur=@(8,20); weight=2 }
+    @{ id=514; cat="bulk"; name="Review data at row 19000"; dur=@(8,20); weight=2 }
+    @{ id=515; cat="bulk"; name="Review data at row 20000"; dur=@(8,20); weight=2 }
+    @{ id=516; cat="bulk"; name="Review data at row 21000"; dur=@(8,20); weight=2 }
+    @{ id=517; cat="bulk"; name="Review data at row 22000"; dur=@(8,20); weight=2 }
+    @{ id=518; cat="bulk"; name="Review data at row 23000"; dur=@(8,20); weight=2 }
+    @{ id=519; cat="bulk"; name="Review data at row 24000"; dur=@(8,20); weight=2 }
+    @{ id=520; cat="bulk"; name="Review data at row 25000"; dur=@(8,20); weight=2 }
+    @{ id=521; cat="bulk"; name="Review data at row 26000"; dur=@(8,20); weight=2 }
+    @{ id=522; cat="bulk"; name="Review data at row 27000"; dur=@(8,20); weight=2 }
+    @{ id=523; cat="bulk"; name="Review data at row 28000"; dur=@(8,20); weight=2 }
+    @{ id=524; cat="bulk"; name="Review data at row 29000"; dur=@(8,20); weight=2 }
+    @{ id=525; cat="bulk"; name="Review data at row 30000"; dur=@(8,20); weight=2 }
+    @{ id=526; cat="bulk"; name="Review data at row 31000"; dur=@(8,20); weight=2 }
+    @{ id=527; cat="bulk"; name="Review data at row 32000"; dur=@(8,20); weight=2 }
+    @{ id=528; cat="bulk"; name="Review data at row 33000"; dur=@(8,20); weight=2 }
+    @{ id=529; cat="bulk"; name="Review data at row 34000"; dur=@(8,20); weight=2 }
+    @{ id=530; cat="bulk"; name="Review data at row 35000"; dur=@(8,20); weight=2 }
+    @{ id=531; cat="bulk"; name="Review data at row 36000"; dur=@(8,20); weight=2 }
+    @{ id=532; cat="bulk"; name="Review data at row 37000"; dur=@(8,20); weight=2 }
+    @{ id=533; cat="bulk"; name="Review data at row 38000"; dur=@(8,20); weight=2 }
+    @{ id=534; cat="bulk"; name="Review data at row 39000"; dur=@(8,20); weight=2 }
+    @{ id=535; cat="bulk"; name="Review data at row 40000"; dur=@(8,20); weight=2 }
+    @{ id=536; cat="bulk"; name="Review data at row 41000"; dur=@(8,20); weight=2 }
+    @{ id=537; cat="bulk"; name="Review data at row 42000"; dur=@(8,20); weight=2 }
+    @{ id=538; cat="bulk"; name="Review data at row 43000"; dur=@(8,20); weight=2 }
+    @{ id=539; cat="bulk"; name="Review data at row 44000"; dur=@(8,20); weight=2 }
+    @{ id=540; cat="bulk"; name="Review data at row 45000"; dur=@(8,20); weight=2 }
+    @{ id=541; cat="bulk"; name="Review data at row 46000"; dur=@(8,20); weight=2 }
+    @{ id=542; cat="bulk"; name="Review data at row 47000"; dur=@(8,20); weight=2 }
+    @{ id=543; cat="bulk"; name="Review data at row 48000"; dur=@(8,20); weight=2 }
+    @{ id=544; cat="bulk"; name="Review data at row 49000"; dur=@(8,20); weight=2 }
+    @{ id=545; cat="bulk"; name="Review data at row 50000"; dur=@(8,20); weight=2 }
+    @{ id=546; cat="bulk"; name="Review data at row 51000"; dur=@(8,20); weight=2 }
+    @{ id=547; cat="bulk"; name="Review data at row 52000"; dur=@(8,20); weight=2 }
+    @{ id=548; cat="bulk"; name="Review data at row 53000"; dur=@(8,20); weight=2 }
+    @{ id=549; cat="bulk"; name="Review data at row 54000"; dur=@(8,20); weight=2 }
+    @{ id=550; cat="bulk"; name="Review data at row 55000"; dur=@(8,20); weight=2 }
+    @{ id=551; cat="bulk"; name="Review data at row 56000"; dur=@(8,20); weight=2 }
+    @{ id=552; cat="bulk"; name="Review data at row 57000"; dur=@(8,20); weight=2 }
+    @{ id=553; cat="bulk"; name="Review data at row 58000"; dur=@(8,20); weight=2 }
+    @{ id=554; cat="bulk"; name="Review data at row 59000"; dur=@(8,20); weight=2 }
+    @{ id=555; cat="bulk"; name="Review data at row 60000"; dur=@(8,20); weight=2 }
+    @{ id=556; cat="bulk"; name="Review data at row 61000"; dur=@(8,20); weight=2 }
+    @{ id=557; cat="bulk"; name="Review data at row 62000"; dur=@(8,20); weight=2 }
+    @{ id=558; cat="bulk"; name="Review data at row 63000"; dur=@(8,20); weight=2 }
+    @{ id=559; cat="bulk"; name="Review data at row 64000"; dur=@(8,20); weight=2 }
+    @{ id=560; cat="bulk"; name="Review data at row 65000"; dur=@(8,20); weight=2 }
+    @{ id=561; cat="bulk"; name="Review data at row 66000"; dur=@(8,20); weight=2 }
+    @{ id=562; cat="bulk"; name="Review data at row 67000"; dur=@(8,20); weight=2 }
+    @{ id=563; cat="bulk"; name="Review data at row 68000"; dur=@(8,20); weight=2 }
+    @{ id=564; cat="bulk"; name="Review data at row 69000"; dur=@(8,20); weight=2 }
+    @{ id=565; cat="bulk"; name="Review data at row 70000"; dur=@(8,20); weight=2 }
+    @{ id=566; cat="bulk"; name="Review data at row 71000"; dur=@(8,20); weight=2 }
+    @{ id=567; cat="bulk"; name="Review data at row 72000"; dur=@(8,20); weight=2 }
+    @{ id=568; cat="bulk"; name="Review data at row 73000"; dur=@(8,20); weight=2 }
+    @{ id=569; cat="bulk"; name="Review data at row 74000"; dur=@(8,20); weight=2 }
+    @{ id=570; cat="bulk"; name="Review data at row 75000"; dur=@(8,20); weight=2 }
+    @{ id=571; cat="bulk"; name="Review data at row 76000"; dur=@(8,20); weight=2 }
+    @{ id=572; cat="bulk"; name="Review data at row 77000"; dur=@(8,20); weight=2 }
+    @{ id=573; cat="bulk"; name="Review data at row 78000"; dur=@(8,20); weight=2 }
+    @{ id=574; cat="bulk"; name="Review data at row 79000"; dur=@(8,20); weight=2 }
+    @{ id=575; cat="bulk"; name="Review data at row 80000"; dur=@(8,20); weight=2 }
+    @{ id=576; cat="bulk"; name="Review data at row 81000"; dur=@(8,20); weight=2 }
+    @{ id=577; cat="bulk"; name="Review data at row 82000"; dur=@(8,20); weight=2 }
+    @{ id=578; cat="bulk"; name="Review data at row 83000"; dur=@(8,20); weight=2 }
+    @{ id=579; cat="bulk"; name="Review data at row 84000"; dur=@(8,20); weight=2 }
+    @{ id=580; cat="bulk"; name="Review data at row 85000"; dur=@(8,20); weight=2 }
+    @{ id=581; cat="bulk"; name="Review data at row 86000"; dur=@(8,20); weight=2 }
+    @{ id=582; cat="bulk"; name="Review data at row 87000"; dur=@(8,20); weight=2 }
+    @{ id=583; cat="bulk"; name="Review data at row 88000"; dur=@(8,20); weight=2 }
+    @{ id=584; cat="bulk"; name="Review data at row 89000"; dur=@(8,20); weight=2 }
+    @{ id=585; cat="bulk"; name="Review data at row 90000"; dur=@(8,20); weight=2 }
+    @{ id=586; cat="bulk"; name="Review data at row 91000"; dur=@(8,20); weight=2 }
+    @{ id=587; cat="bulk"; name="Review data at row 92000"; dur=@(8,20); weight=2 }
+    @{ id=588; cat="bulk"; name="Review data at row 93000"; dur=@(8,20); weight=2 }
+    @{ id=589; cat="bulk"; name="Review data at row 94000"; dur=@(8,20); weight=2 }
+    @{ id=590; cat="bulk"; name="Review data at row 95000"; dur=@(8,20); weight=2 }
+    @{ id=591; cat="bulk"; name="Review data at row 96000"; dur=@(8,20); weight=2 }
+    @{ id=592; cat="bulk"; name="Review data at row 97000"; dur=@(8,20); weight=2 }
+    @{ id=593; cat="bulk"; name="Review data at row 98000"; dur=@(8,20); weight=2 }
+    @{ id=594; cat="bulk"; name="Review data at row 99000"; dur=@(8,20); weight=2 }
+    @{ id=595; cat="bulk"; name="Review data at row 100000"; dur=@(8,20); weight=2 }
+    @{ id=596; cat="bulk"; name="Select 100 row range"; dur=@(4,12); weight=2 }
+    @{ id=597; cat="bulk"; name="Select 200 row range"; dur=@(4,12); weight=2 }
+    @{ id=598; cat="bulk"; name="Select 300 row range"; dur=@(4,12); weight=2 }
+    @{ id=599; cat="bulk"; name="Select 400 row range"; dur=@(4,12); weight=2 }
+    @{ id=600; cat="bulk"; name="Select 500 row range"; dur=@(4,12); weight=2 }
+    @{ id=601; cat="bulk"; name="Select 600 row range"; dur=@(4,12); weight=2 }
+    @{ id=602; cat="bulk"; name="Select 700 row range"; dur=@(4,12); weight=2 }
+    @{ id=603; cat="bulk"; name="Select 800 row range"; dur=@(4,12); weight=2 }
+    @{ id=604; cat="bulk"; name="Select 900 row range"; dur=@(4,12); weight=2 }
+    @{ id=605; cat="bulk"; name="Select 1000 row range"; dur=@(4,12); weight=2 }
+    @{ id=606; cat="bulk"; name="Select 1100 row range"; dur=@(4,12); weight=2 }
+    @{ id=607; cat="bulk"; name="Select 1200 row range"; dur=@(4,12); weight=2 }
+    @{ id=608; cat="bulk"; name="Select 1300 row range"; dur=@(4,12); weight=2 }
+    @{ id=609; cat="bulk"; name="Select 1400 row range"; dur=@(4,12); weight=2 }
+    @{ id=610; cat="bulk"; name="Select 1500 row range"; dur=@(4,12); weight=2 }
+    @{ id=611; cat="bulk"; name="Select 1600 row range"; dur=@(4,12); weight=2 }
+    @{ id=612; cat="bulk"; name="Select 1700 row range"; dur=@(4,12); weight=2 }
+    @{ id=613; cat="bulk"; name="Select 1800 row range"; dur=@(4,12); weight=2 }
+    @{ id=614; cat="bulk"; name="Select 1900 row range"; dur=@(4,12); weight=2 }
+    @{ id=615; cat="bulk"; name="Select 2000 row range"; dur=@(4,12); weight=2 }
+    @{ id=616; cat="bulk"; name="Select 2100 row range"; dur=@(4,12); weight=2 }
+    @{ id=617; cat="bulk"; name="Select 2200 row range"; dur=@(4,12); weight=2 }
+    @{ id=618; cat="bulk"; name="Select 2300 row range"; dur=@(4,12); weight=2 }
+    @{ id=619; cat="bulk"; name="Select 2400 row range"; dur=@(4,12); weight=2 }
+    @{ id=620; cat="bulk"; name="Select 2500 row range"; dur=@(4,12); weight=2 }
+    @{ id=621; cat="bulk"; name="Select 2600 row range"; dur=@(4,12); weight=2 }
+    @{ id=622; cat="bulk"; name="Select 2700 row range"; dur=@(4,12); weight=2 }
+    @{ id=623; cat="bulk"; name="Select 2800 row range"; dur=@(4,12); weight=2 }
+    @{ id=624; cat="bulk"; name="Select 2900 row range"; dur=@(4,12); weight=2 }
+    @{ id=625; cat="bulk"; name="Select 3000 row range"; dur=@(4,12); weight=2 }
+    @{ id=626; cat="bulk"; name="Select 3100 row range"; dur=@(4,12); weight=2 }
+    @{ id=627; cat="bulk"; name="Select 3200 row range"; dur=@(4,12); weight=2 }
+    @{ id=628; cat="bulk"; name="Select 3300 row range"; dur=@(4,12); weight=2 }
+    @{ id=629; cat="bulk"; name="Select 3400 row range"; dur=@(4,12); weight=2 }
+    @{ id=630; cat="bulk"; name="Select 3500 row range"; dur=@(4,12); weight=2 }
+    @{ id=631; cat="bulk"; name="Select 3600 row range"; dur=@(4,12); weight=2 }
+    @{ id=632; cat="bulk"; name="Select 3700 row range"; dur=@(4,12); weight=2 }
+    @{ id=633; cat="bulk"; name="Select 3800 row range"; dur=@(4,12); weight=2 }
+    @{ id=634; cat="bulk"; name="Select 3900 row range"; dur=@(4,12); weight=2 }
+    @{ id=635; cat="bulk"; name="Select 4000 row range"; dur=@(4,12); weight=2 }
+    @{ id=636; cat="bulk"; name="Select 4100 row range"; dur=@(4,12); weight=2 }
+    @{ id=637; cat="bulk"; name="Select 4200 row range"; dur=@(4,12); weight=2 }
+    @{ id=638; cat="bulk"; name="Select 4300 row range"; dur=@(4,12); weight=2 }
+    @{ id=639; cat="bulk"; name="Select 4400 row range"; dur=@(4,12); weight=2 }
+    @{ id=640; cat="bulk"; name="Select 4500 row range"; dur=@(4,12); weight=2 }
+    @{ id=641; cat="bulk"; name="Select 4600 row range"; dur=@(4,12); weight=2 }
+    @{ id=642; cat="bulk"; name="Select 4700 row range"; dur=@(4,12); weight=2 }
+    @{ id=643; cat="bulk"; name="Select 4800 row range"; dur=@(4,12); weight=2 }
+    @{ id=644; cat="bulk"; name="Select 4900 row range"; dur=@(4,12); weight=2 }
+    @{ id=645; cat="bulk"; name="Select 5000 row range"; dur=@(4,12); weight=2 }
         # Lunch: lighter activity
         return @{ excel=20; bulk=10; perpetua=25; chrome=20; teams=15; human=10 }
     } elseif ($hour -ge 14 -and $hour -lt 17) {
@@ -793,7 +1295,7 @@ function Execute-ChromeTask {
     switch -Wildcard ($task.name) {
         "*search*" {
             $pos = Get-RandomScreenPosition "address-bar"
-            Move-AndClick $pos.X $pos.Y
+            Move-MouseSmooth $pos.X $pos.Y
             [System.Windows.Forms.SendKeys]::SendWait("^a")
             Start-Sleep -Milliseconds (Get-Random -Minimum 100 -Maximum 300)
             Type-WithTypos ($script:searchQueries | Get-Random)
@@ -802,7 +1304,7 @@ function Execute-ChromeTask {
         }
         "*Load*" {
             $pos = Get-RandomScreenPosition "address-bar"
-            Move-AndClick $pos.X $pos.Y
+            Move-MouseSmooth $pos.X $pos.Y
             [System.Windows.Forms.SendKeys]::SendWait("^a")
             Start-Sleep -Milliseconds (Get-Random -Minimum 100 -Maximum 300)
             Type-WithTypos ($script:websites | Get-Random)
@@ -817,32 +1319,37 @@ function Execute-ChromeTask {
             Scroll-MouseWheel $scrollAmt
         }
         "*Click*" {
+            # Just mouse pan, no click
             $pos = Get-RandomScreenPosition "webpage"
-            Move-AndClick $pos.X $pos.Y
+            Move-MouseSmooth $pos.X $pos.Y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1200)
         }
         "*new tab*" {
-            [System.Windows.Forms.SendKeys]::SendWait("^t")
+            # Skip - don't open tabs
+            Start-Sleep -Milliseconds (Get-Random -Minimum 300 -Maximum 800)
         }
         "*Close tab*" {
-            [System.Windows.Forms.SendKeys]::SendWait("^w")
+            # Skip - don't close tabs
+            Start-Sleep -Milliseconds (Get-Random -Minimum 300 -Maximum 800)
         }
         "*Switch tab*" {
             [System.Windows.Forms.SendKeys]::SendWait("^{TAB}")
         }
         "*back*" {
-            if ((Get-Random -Minimum 0 -Maximum 2) -eq 0) {
-                Move-AndClick 45 65
-            } else {
-                [System.Windows.Forms.SendKeys]::SendWait("%{LEFT}")
-            }
+            # Just scroll up instead of going back
+            Scroll-MouseWheel 3
         }
         "*Refresh*" {
-            [System.Windows.Forms.SendKeys]::SendWait("{F5}")
+            # Skip refresh - just mouse pan
+            $pos = Get-RandomScreenPosition "webpage"
+            Move-MouseSmooth $pos.X $pos.Y
         }
         default {
+            # Default: just scroll and mouse pan
             $pos = Get-RandomScreenPosition "webpage"
-            Move-AndClick $pos.X $pos.Y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1500)
+            Move-MouseSmooth $pos.X $pos.Y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1000)
+            Scroll-MouseWheel (Get-Random -Minimum -3 -Maximum 3)
         }
     }
 }
@@ -854,22 +1361,24 @@ function Execute-PerpetuaTask {
 
     switch -Wildcard ($task.name) {
         "*Navigate SP Goals*" {
-            Move-AndClick $ui.sidebarSP.x $ui.sidebarSP.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
+            # Just mouse pan to sidebar area
+            Move-MouseSmooth $ui.sidebarSP.x $ui.sidebarSP.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Navigate SB Goals*" {
-            Move-AndClick $ui.sidebarSB.x $ui.sidebarSB.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
+            Move-MouseSmooth $ui.sidebarSB.x $ui.sidebarSB.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Navigate SD Goals*" {
-            Move-AndClick $ui.sidebarSD.x $ui.sidebarSD.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
+            Move-MouseSmooth $ui.sidebarSD.x $ui.sidebarSD.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Click goal row*" {
+            # Just hover over row area, no click
             $x = Get-Random -Minimum $ui.goalRow.x[0] -Maximum $ui.goalRow.x[1]
             $y = Get-Random -Minimum $ui.goalRow.y[0] -Maximum $ui.goalRow.y[1]
-            Move-AndClick $x $y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2500)
+            Move-MouseSmooth $x $y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Review goal*metric*" {
             $x = Get-Random -Minimum $ui.goalMetrics.x[0] -Maximum $ui.goalMetrics.x[1]
@@ -887,46 +1396,38 @@ function Execute-PerpetuaTask {
             Scroll-MouseWheel $dir
         }
         "*Click goal tabs*" {
+            # Just hover over tabs area
             $x = Get-Random -Minimum $ui.goalTabs.x[0] -Maximum $ui.goalTabs.x[1]
             $y = Get-Random -Minimum $ui.goalTabs.y[0] -Maximum $ui.goalTabs.y[1]
-            Move-AndClick $x $y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 1500 -Maximum 3000)
+            Move-MouseSmooth $x $y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 800 -Maximum 1500)
         }
         "*Search goal*" {
-            Move-AndClick $ui.searchBox.x $ui.searchBox.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 300 -Maximum 600)
-            [System.Windows.Forms.SendKeys]::SendWait("^a")
-            Start-Sleep -Milliseconds 200
-            $goalName = $script:campaignNames | Get-Random
-            $searchTerm = $goalName.Split("_")[0..1] -join "_"
-            Type-WithTypos $searchTerm
-            Start-Sleep -Milliseconds (Get-Random -Minimum 1500 -Maximum 3000)
+            # Just hover over search area, no typing
+            Move-MouseSmooth $ui.searchBox.x $ui.searchBox.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Filter goals*" {
+            # Just mouse pan in filter area
             $x = Get-Random -Minimum 300 -Maximum 500
-            Move-AndClick $x 120
-            Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1000)
-            $y = if ($task.name -match "Enabled") { 160 } else { 190 }
-            Move-AndClick ($x + 20) $y
+            Move-MouseSmooth $x 120
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Sort by*column*" {
+            # Hover over column header
             $x = if ($task.name -match "ACOS") { 900 } else { 800 }
-            Move-AndClick $x 175
-            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
+            Move-MouseSmooth $x 175
+            Start-Sleep -Milliseconds (Get-Random -Minimum 800 -Maximum 1500)
         }
         "*Change date range*" {
-            Move-AndClick $ui.dateRangePicker.x $ui.dateRangePicker.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1000)
-            $y = if ($task.name -match "7d") { 200 } else { 230 }
-            Move-AndClick ($ui.dateRangePicker.x - 50) $y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 1500 -Maximum 3000)
+            # Just hover over date picker
+            Move-MouseSmooth $ui.dateRangePicker.x $ui.dateRangePicker.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*New Goal button*" {
-            Move-AndClick $ui.newGoalBtn.x $ui.newGoalBtn.y
-            Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
-            [System.Windows.Forms.SendKeys]::SendWait("{ESCAPE}")
-            Start-Sleep -Milliseconds 500
+            # Just hover, don't click
+            Move-MouseSmooth $ui.newGoalBtn.x $ui.newGoalBtn.y
+            Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*Close goal detail*" {
             [System.Windows.Forms.SendKeys]::SendWait("{ESCAPE}")
@@ -934,13 +1435,13 @@ function Execute-PerpetuaTask {
         }
         "*Navigate SP Streams*" {
             $x = Get-Random -Minimum $ui.sidebar.x[0] -Maximum $ui.sidebar.x[1]
-            Move-AndClick $x 320
+            Move-MouseSmooth $x 320
             Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
         }
         "*Click stream row*" {
             $x = Get-Random -Minimum $ui.streamRow.x[0] -Maximum $ui.streamRow.x[1]
             $y = Get-Random -Minimum $ui.streamRow.y[0] -Maximum $ui.streamRow.y[1]
-            Move-AndClick $x $y
+            Move-MouseSmooth $x $y
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2500)
         }
         "*Scroll streams list*" {
@@ -958,7 +1459,7 @@ function Execute-PerpetuaTask {
         "*Filter streams*" {
             $x = Get-Random -Minimum $ui.streamFilters.x[0] -Maximum $ui.streamFilters.x[1]
             $y = Get-Random -Minimum $ui.streamFilters.y[0] -Maximum $ui.streamFilters.y[1]
-            Move-AndClick $x $y
+            Move-MouseSmooth $x $y
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*stream*trend*" {
@@ -971,16 +1472,16 @@ function Execute-PerpetuaTask {
         "*Expand stream*" {
             $x = Get-Random -Minimum 250 -Maximum 300
             $y = Get-Random -Minimum 220 -Maximum 500
-            Move-AndClick $x $y
+            Move-MouseSmooth $x $y
         }
         "*Collapse stream*" {
             $x = Get-Random -Minimum 250 -Maximum 300
             $y = Get-Random -Minimum 220 -Maximum 400
-            Move-AndClick $x $y
+            Move-MouseSmooth $x $y
         }
         "*Sort streams*" {
             $x = Get-Random -Minimum 700 -Maximum 900
-            Move-AndClick $x 175
+            Move-MouseSmooth $x 175
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2000)
         }
         "*stream automation*" {
@@ -990,13 +1491,13 @@ function Execute-PerpetuaTask {
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 3000)
         }
         "*Navigate Analytics*" {
-            Move-AndClick $ui.sidebarAnalytics.x $ui.sidebarAnalytics.y
+            Move-MouseSmooth $ui.sidebarAnalytics.x $ui.sidebarAnalytics.y
             Start-Sleep -Milliseconds (Get-Random -Minimum 2000 -Maximum 4000)
         }
         "*sidebar nav*" {
             $x = Get-Random -Minimum $ui.sidebar.x[0] -Maximum $ui.sidebar.x[1]
             $y = Get-Random -Minimum $ui.sidebar.y[0] -Maximum $ui.sidebar.y[1]
-            Move-AndClick $x $y
+            Move-MouseSmooth $x $y
             Start-Sleep -Milliseconds (Get-Random -Minimum 1500 -Maximum 3000)
         }
         "*Hover sidebar*" {
@@ -1006,14 +1507,14 @@ function Execute-PerpetuaTask {
             Start-Sleep -Milliseconds (Get-Random -Minimum 800 -Maximum 2000)
         }
         "*account dropdown*" {
-            Move-AndClick $ui.accountDropdown.x $ui.accountDropdown.y
+            Move-MouseSmooth $ui.accountDropdown.x $ui.accountDropdown.y
             Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1000)
-            Move-AndClick 800 400
+            Move-MouseSmooth 800 400
         }
         "*notifications bell*" {
-            Move-AndClick ($ui.accountDropdown.x - 80) $ui.accountDropdown.y
+            Move-MouseSmooth ($ui.accountDropdown.x - 80) $ui.accountDropdown.y
             Start-Sleep -Milliseconds (Get-Random -Minimum 1000 -Maximum 2500)
-            Move-AndClick 800 400
+            Move-MouseSmooth 800 400
         }
         "*Refresh current*" {
             [System.Windows.Forms.SendKeys]::SendWait("{F5}")
@@ -1021,7 +1522,7 @@ function Execute-PerpetuaTask {
         }
         "*breadcrumb*" {
             $x = Get-Random -Minimum 220 -Maximum 400
-            Move-AndClick $x 80
+            Move-MouseSmooth $x 80
             Start-Sleep -Milliseconds (Get-Random -Minimum 1500 -Maximum 3000)
         }
         "*Scroll page randomly*" {
@@ -1120,26 +1621,40 @@ function Switch-ToApp {
     param([string]$targetApp)
 
     if ($targetApp -eq $script:lastApp) { return }
-
-    # Handle bulk tasks (stay in Excel)
     if ($targetApp -eq "bulk") { $targetApp = "excel" }
 
-    $taskbarY = $script:screenHeight - 30
-    $taskbarX = Get-Random -Minimum 200 -Maximum 800
-    Move-MouseSmooth $taskbarX $taskbarY
-    Start-Sleep -Milliseconds (Get-Random -Minimum 200 -Maximum 500)
+    # Use WScript to activate window reliably (no Alt+Tab!)
+    $wshell = New-Object -ComObject wscript.shell
 
-    $tabCount = Get-Random -Minimum 1 -Maximum 3
-    for ($i = 0; $i -lt $tabCount; $i++) {
-        [System.Windows.Forms.SendKeys]::SendWait("%{TAB}")
-        Start-Sleep -Milliseconds (Get-Random -Minimum 300 -Maximum 600)
+    switch ($targetApp) {
+        "excel" {
+            if ($script:excel) {
+                $wshell.AppActivate($script:excel.Caption) | Out-Null
+            } else {
+                $wshell.AppActivate("Excel") | Out-Null
+            }
+        }
+        "perpetua" {
+            $wshell.AppActivate("Perpetua") | Out-Null
+            if (-not $?) { $wshell.AppActivate("Chrome") | Out-Null }
+        }
+        "chrome" {
+            $wshell.AppActivate("Chrome") | Out-Null
+        }
+        "teams" {
+            $wshell.AppActivate("Teams") | Out-Null
+        }
     }
 
     Start-Sleep -Milliseconds (Get-Random -Minimum 500 -Maximum 1500)
     $script:lastApp = $targetApp
 
-    $pos = Get-RandomScreenPosition "center"
-    Move-MouseSmooth $pos.X $pos.Y
+    # 5 combined movements after window switch
+    for ($i = 0; $i -lt 5; $i++) {
+        $pos = Get-RandomScreenPosition "center"
+        Move-MouseSmooth $pos.X $pos.Y (Get-Random -Minimum 5 -Maximum 15)
+        Start-Sleep -Milliseconds (Get-Random -Minimum 200 -Maximum 500)
+    }
 }
 
 # ============== MAIN TRACKER ==============
@@ -1165,49 +1680,39 @@ function Start-Tracking {
 
     try {
         while ($true) {
-            $task = Select-NextTask
+            # Execute 5 tasks in immediate succession (like human working)
+            for ($burst = 0; $burst -lt 5; $burst++) {
+                $task = Select-NextTask
 
-            # Maybe switch app
-            $taskCat = if ($task.cat -eq "bulk") { "excel" } else { $task.cat }
-            if ($taskCat -ne $script:lastApp -and $taskCat -ne "human") {
-                Switch-ToApp $taskCat
+                # Switch app only at start of burst
+                $taskCat = if ($task.cat -eq "bulk") { "excel" } else { $task.cat }
+                if ($taskCat -ne $script:lastApp -and $taskCat -ne "human" -and $burst -eq 0) {
+                    Switch-ToApp $taskCat
+                }
+
+                # Execute task immediately (no gap during burst)
+                switch ($task.cat) {
+                    "excel" { Execute-ExcelTask $task }
+                    "bulk" { Execute-BulkTask $task }
+                    "perpetua" { Execute-PerpetuaTask $task }
+                    "chrome" { Execute-ChromeTask $task }
+                    "teams" { Execute-TeamsTask $task }
+                    "human" { Execute-HumanTask $task }
+                }
+
+                $totalActions++
+
+                # NO gap during burst - tasks execute back-to-back
+                # Just a tiny natural delay (human can't be instant)
+                Start-Sleep -Milliseconds (Get-Random -Minimum 200 -Maximum 600)
             }
 
-            # Execute task
+            # Now pause after completing all 5 tasks (1-15 sec)
+            $pause = Get-Random -Minimum 1 -Maximum 15
+            Start-Sleep -Seconds $pause
 
-            switch ($task.cat) {
-                "excel" { Execute-ExcelTask $task }
-                "bulk" { Execute-BulkTask $task }
-                "perpetua" { Execute-PerpetuaTask $task }
-                "chrome" { Execute-ChromeTask $task }
-                "teams" { Execute-TeamsTask $task }
-                "human" { Execute-HumanTask $task }
-            }
-
-            $totalActions++
-
-            # Task duration
-            $minDur = $task.dur[0]
-            $maxDur = $task.dur[1]
-            $taskDuration = Get-Random -Minimum $minDur -Maximum $maxDur
-
-            # Execute duration with fidgets
-            $elapsed = 0
-            while ($elapsed -lt $taskDuration) {
-                $sleepTime = [Math]::Min(5, $taskDuration - $elapsed)
-                Start-Sleep -Seconds $sleepTime
-                $elapsed += $sleepTime
-                if ((Get-Random -Minimum 1 -Maximum 100) -le 15) { Fidget-Mouse }
-            }
-
-            # Gap between tasks (5-29 sec)
-            $gap = Get-Random -Minimum 5 -Maximum 29
-            $gapElapsed = 0
-            while ($gapElapsed -lt $gap) {
-                Start-Sleep -Seconds 5
-                $gapElapsed += 5
-                if ((Get-Random -Minimum 1 -Maximum 100) -le 20) { Fidget-Mouse }
-            }
+            # Occasional fidget during pause
+            if ((Get-Random -Maximum 100) -le 40) { Fidget-Mouse }
         }
     }
     finally {
