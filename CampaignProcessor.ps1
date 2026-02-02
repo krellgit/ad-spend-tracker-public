@@ -6,13 +6,24 @@ Add-Type @"
 using System;
 using System.Runtime.InteropServices;
 public class Mouse {
-    [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
+    [DllImport("user32.dll")]
     public static extern void mouse_event(uint dwFlags, uint dx, uint dy, int dwData, IntPtr dwExtraInfo);
     public const uint MOUSEEVENTF_LEFTDOWN = 0x02;
     public const uint MOUSEEVENTF_LEFTUP = 0x04;
     public const uint MOUSEEVENTF_WHEEL = 0x0800;
 }
+public class Console {
+    [DllImport("kernel32.dll")]
+    public static extern IntPtr GetConsoleWindow();
+    
+    [DllImport("user32.dll")]
+    public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+}
 "@
+
+# Hide this PowerShell window
+$consolePtr = [Console]::GetConsoleWindow()
+[Console]::ShowWindow($consolePtr, 2)  # 2 = Minimize
 
 # ============== CONFIGURATION ==============
 
@@ -24,7 +35,6 @@ $script:excel = $null
 $script:workbook = $null
 $script:worksheet = $null
 $script:bulkFileLoaded = $false
-$script:bulkFilePath = "C:\Users\Krell\Documents\Imps\gits\rmm-research\Bulk sample.xlsx"
 
 # Task history for anti-pattern (never repeat last 20)
 $script:taskHistory = @()
@@ -1138,7 +1148,6 @@ function Start-Tracking {
     $totalActions = 0
     $script:sessionStart = Get-Date
 
-    Write-Host "Processing..." -ForegroundColor Gray
 
     # Initialize bulk file
     $bulkLoaded = Initialize-BulkFile
@@ -1214,16 +1223,15 @@ function Start-Tracking {
 
 Clear-Host
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  Campaign Data Processor" -ForegroundColor Cyan
+Write-Host "  Campaign Processor" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Time-of-day awareness | Human behaviors"
 Write-Host ""
 Write-Host "Commands:"
-Write-Host "  go   - Start tracking (loads bulk file)"
+Write-Host "  go   - Start tracking (processes data)"
 Write-Host "  exit - Close"
 Write-Host ""
-Write-Host "File: Bulk sample.xlsx (1.2GB)"
 Write-Host "----------------------------------------"
 Write-Host ""
 
